@@ -74,10 +74,16 @@ body{
   background-color: #213547;
 }
 
+.wrapper{
+  display: flex;
+  gap:50px
+  /* flex-direction: row; */
+}
+
 .container {
   border: 2px solid #72c3f1;
   border-radius: 2px;
-  width: 200px;
+  width: 300px;
   color: #ffffff;
 
 }
@@ -102,7 +108,13 @@ body{
   border-radius: 2px;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
+gap: 10px;
+}
+
+.button-wrapper{
+  justify-content: center;
 }
 
 .button {
@@ -122,4 +134,29 @@ body{
   font-size: 50px;
   font-weight: 800;
   color: red;
+}
+
+.inputs-container{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #72c3f1;
+  border-radius: 2px;
+  margin: 10px;
+  padding: 10px 0px;
+  gap: 10px;
+}
+
+/* .input-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  /* margin: ; */
+  /* padding: 10px 10px;
+  font-weight: 900;
+  color: #72c3f1
+}  */
+
+.error{
+  background-color: rgb(216, 143, 143);
+  border-color: red;
 }
